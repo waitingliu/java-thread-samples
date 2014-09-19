@@ -6,9 +6,8 @@ public class GivingThread implements Runnable{
 		this.apple = apple;
 	}
 	public void run(){
-		
-		//System.out.print("giving:");
-		apple.giving(1);
-		System.out.println("+2,now "+apple.count());
+		for(int i=0;i<5;i++){
+			apple.giving(1);
+		}
 	}
 }
