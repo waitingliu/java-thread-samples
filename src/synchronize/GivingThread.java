@@ -7,8 +7,8 @@ public class GivingThread implements Runnable{
 	}
 	public void run(){
 		
-		System.out.print("giving:");
+		//System.out.print("giving:");
 		apple.giving(1);
-		System.out.println("+1,now "+apple.count());
+		System.out.println("+2,now "+apple.count());
 	}
 }

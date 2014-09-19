@@ -7,8 +7,12 @@ public class Apple {
 	}
 	public synchronized void eating(int number){
 		apple=apple-number;
+		Thread.yield();
+		apple=apple-number;
 	}
 	public synchronized void giving(int number){
+		apple=apple+number;
+		Thread.yield();
 		apple=apple+number;
 	}
 	public synchronized int count(){

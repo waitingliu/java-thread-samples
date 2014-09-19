@@ -8,8 +8,8 @@ public class EatingThread implements Runnable{
 	}
 	public void run(){
 		
-		System.out.print("eating:");
+		//System.out.print("eating:");
 		apple.eating(1);
-		System.out.println("-1,now "+apple.count());
+		System.out.println("-2,now "+apple.count());
 	}
 }

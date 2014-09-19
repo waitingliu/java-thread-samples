@@ -12,7 +12,6 @@ public class Test {
 			ExecutorService exec = Executors.newCachedThreadPool(new MyThreadFactory());
 			exec.execute(new EatingThread(apple));
 			exec.execute(new GivingThread(apple));
-			Thread.yield();
 		}
 	}
 
