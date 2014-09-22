@@ -1,7 +1,5 @@
 package synchronize;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class Test {
 	
@@ -14,7 +12,9 @@ public class Test {
 		new Thread(new GivingThread(apple)).start();
 		/*ExecutorService exec = Executors.newCachedThreadPool(new MyThreadFactory());
 		exec.execute(new EatingThread(apple));
-		exec.execute(new GivingThread(apple));*/
+		exec.execute(new GivingThread(apple));
+		exec.shutdown();
+		*/
 	}
 
 }

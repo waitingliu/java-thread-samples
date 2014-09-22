@@ -1,6 +1,3 @@
-import java.util.Date;
-
-
 public class MyRunnable implements Runnable{
 	public static int count = 0;
 	@Override

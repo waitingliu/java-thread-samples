@@ -14,6 +14,7 @@ public class rightExample implements Runnable{
 		// TODO Auto-generated method stub
 		ExecutorService exec = Executors.newCachedThreadPool(new HandlerThreadFactory());
 		exec.execute(new rightExample());
+		exec.shutdown();
 	}
 
 

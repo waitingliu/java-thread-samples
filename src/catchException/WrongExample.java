@@ -14,5 +14,6 @@ public class WrongExample implements Runnable{
 	public static void main(String[] args) {
 		ExecutorService exec = Executors.newCachedThreadPool();
 		exec.execute(new WrongExample());
+		exec.shutdown();
 	}
 }

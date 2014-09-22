@@ -15,6 +15,7 @@ public class ImmutableValue {
 		ImmutableValue iv = new ImmutableValue(100);//由此创建的对象是线程安全的不可变对象
 		iv.getValue();
 		//一个对象是线程安全的不可变对象，并不意味着对象的引用是线程安全的。
+		@SuppressWarnings("unused")
 		ImmutableValue iv2 = null;
 		
 	}
