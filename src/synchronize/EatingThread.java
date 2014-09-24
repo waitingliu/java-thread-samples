@@ -7,8 +7,8 @@ public class EatingThread implements Runnable{
 		this.apple = apple;
 	}
 	public void run(){
-		for(int i=0;i<3;i++){
-			apple.eating(1);
+		for(int i=0;i<5;i++){
+			apple.eating(10);
 		}
 	}
 }
