@@ -6,7 +6,7 @@ public class Job implements Runnable{
 		this.printq = printq;
 	}
 	public void run(){
-		System.out.println("Job running");
+		System.out.println(Thread.currentThread().getName()+" Job running");
 		printq.printJob(new Object());
 	}
 	public static void main(String args[]){

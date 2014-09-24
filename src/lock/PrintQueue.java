@@ -9,7 +9,7 @@ public class PrintQueue {
 	public void printJob(Object document){
 		try {
 			queueLock.lock();
-			System.out.println("print a document:"+document);
+			System.out.println(Thread.currentThread().getName()+" print a document:"+document);
 			TimeUnit.SECONDS.sleep(2);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
