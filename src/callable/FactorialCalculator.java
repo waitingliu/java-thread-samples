@@ -73,6 +73,7 @@ public class FactorialCalculator implements Callable<Integer>{
 			Integer number = null;
 			try {
 				//通过Future对象的get()方法获取任务返回的结果
+				//get()方法一直等待直到call()方法执行完并返回结果
 				number = result.get();
 			} catch (InterruptedException | ExecutionException e) {
 				// TODO Auto-generated catch block

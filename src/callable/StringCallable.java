@@ -44,12 +44,10 @@ public class StringCallable implements Callable<String>{
 			try {
 				TimeUnit.MILLISECONDS.sleep(5);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			for(int i=0;i<slists.size();i++){
 				System.out.println("task "+i+":"+slists.get(i).isDone());
-				
 			}
 			System.out.println("------");
 		}while(executor.getCompletedTaskCount()<slists.size());
@@ -57,7 +55,6 @@ public class StringCallable implements Callable<String>{
 			try {
 				System.out.println("task "+i+":"+slists.get(i).get());
 			} catch (InterruptedException | ExecutionException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

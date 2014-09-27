@@ -1,1 +1,1 @@
-<h1>Samples for cocurrent and thread using Java</h1>
+<h1>Samples for concurrent and thread using Java</h1>
