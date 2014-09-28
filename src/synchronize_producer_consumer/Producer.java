@@ -4,13 +4,15 @@ import java.util.concurrent.TimeUnit;
 
 public class Producer implements Runnable{
 	private Iphone6Factory iphone6f;
-	public Producer(Iphone6Factory iphone6f){
+	private int count;
+	public Producer(Iphone6Factory iphone6f,int count){
 		this.iphone6f = iphone6f;
+		this.count = count;
 	}
 	public void run(){
-		for(int i = 0;i<20;i++){
+		for(int i = 0;i<count;i++){
 			try {
-				TimeUnit.MILLISECONDS.sleep(2000);
+				TimeUnit.MILLISECONDS.sleep(200);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

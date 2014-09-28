@@ -40,4 +40,7 @@ public class Iphone6Factory {
 		notifyAll();
 		return iphone6;
 	}
+	public int getStorage(){
+		return storage.size();
+	}
 }
