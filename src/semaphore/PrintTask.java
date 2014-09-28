@@ -17,6 +17,7 @@ public class PrintTask implements Runnable{
 		printer.print(this.document);
 	}
 	public static void main(String[] args){
+		//设置信号量为5，当信号量设置为1时，可以当作【锁】来使用
 		PrinterQueue printer = new PrinterQueue(5);
 		//线程池大小为3，所以并发打印线程数为3
 		//ExecutorService es = Executors.newFixedThreadPool(3);
